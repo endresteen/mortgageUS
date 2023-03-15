@@ -9,9 +9,11 @@
         color: white;
         margin: 0;
         padding: 0;
+        display: flex; /* Make the body a flex container */
       }
 
       .container {
+        flex: 1; /* Make the container element take up the remaining width */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -19,31 +21,6 @@
         margin: 0;
         padding: 0;
         height: 100vh;
-      }
-
-      .menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #222222;
-        width: 100%;
-        height: 50px;
-        padding: 0 20px;
-        box-sizing: border-box;
-      }
-
-      .menu-item {
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-        padding: 10px;
-        border-bottom: 3px solid transparent;
-      }
-
-      .menu-item:hover {
-        border-bottom: 3px solid white;
       }
 
       h1 {
@@ -55,7 +32,7 @@
       .chart-container {
         background-color: #666666;
         width: 100%;
-        height: calc(100% - 110px);
+        height: calc(100% - 60px);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -86,15 +63,43 @@
         text-align: center;
       }
 
+      /* Add styles for the left-side menu */
+      .menu-container {
+        background-color: #444444;
+        width: 200px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+      }
+
+      .menu-item {
+        margin-bottom: 10px;
+      }
+
+      .menu-item a {
+        color: white;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="menu">
-        <div class="menu-item">Home</div>
-        <div class="menu-item">About</div>
-        <div class="menu-item">Contact</div>
+    <!-- Add the left-side menu container -->
+    <div class="menu-container">
+      <div class="menu-item">
+        <a href="#">Home</a>
       </div>
+      <div class="menu-item">
+        <a href="#">About</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <!-- Add the main content container -->
+    <div class="container">
       <h1>FIN3522 Group 16</h1>
       <div class="chart-container">
         <iframe src="Mortgage_US_by_holder.html"></iframe>
@@ -108,5 +113,6 @@
     </div>
   </body>
 </html>
+
 
 
