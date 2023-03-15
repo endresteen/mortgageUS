@@ -11,7 +11,7 @@
         padding: 0;
         display: flex; /* Make the body a flex container */
       }
-      
+
       .header {
         background-color: #444444;
         display: flex;
@@ -39,16 +39,15 @@
       .menu-top a:hover {
         background-color: #333333;
       }
-      
+
       .container {
-        flex: 1; /* Make the container element take up the remaining width */
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         margin: 0;
         padding: 0;
-        height: 100vh;
+        flex-grow: 1;
       }
 
       h1 {
@@ -60,7 +59,7 @@
       .chart-container {
         background-color: #666666;
         width: 100%;
-        height: calc(100% - 60px);
+        height: calc(100% - 140px);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -94,7 +93,7 @@
       /* Add styles for the left-side menu */
       .menu-container {
         background-color: #444444;
-        width: 80px;
+        width: 100px;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -126,13 +125,13 @@
     <!-- Add the left-side menu container -->
     <div class="menu-container">
       <div class="menu-item">
-        <a href="#">Home</a>
+        <a href="#">WE</a>
       </div>
       <div class="menu-item">
-        <a href="#">About</a>
+        <a href="#">LOVE</a>
       </div>
       <div class="menu-item">
-        <a href="#">Contact</a>
+        <a href="#">FINANCE</a>
       </div>
     </div>
     <!-- Add the main content container -->
