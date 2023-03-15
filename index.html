@@ -10,42 +10,17 @@
         margin: 0;
         padding: 0;
         display: flex; /* Make the body a flex container */
-        flex-direction: column; /* Make the body a column flex container */
       }
 
-      .header {
-        background-color: #444444;
+      .container {
+        flex: 1; /* Make the container element take up the remaining width */
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        padding: 10px 20px;
-      }
-
-      .header h2 {
-        margin: 0;
-        color: white;
-      }
-
-      .menu-top {
-        display: flex;
         justify-content: center;
-      }
-
-      .menu-top a {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-      }
-
-      .menu-top a:hover {
-        background-color: #333333;
-      }
-
-     .container {
-      display: flex;
-      margin: 0;
-      padding: 0;
-      flex-grow: 1;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
       }
 
       h1 {
@@ -56,8 +31,8 @@
 
       .chart-container {
         background-color: #666666;
-        width: calc(100% - 120px);
-        height: calc(100vh - 80px);
+        width: 100%;
+        height: calc(100% - 60px);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -91,7 +66,7 @@
       /* Add styles for the left-side menu */
       .menu-container {
         background-color: #444444;
-        width: 100px;
+        width: 200px;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -111,12 +86,15 @@
     </style>
   </head>
   <body>
-    <!-- Add the top menu container -->
-    <div class="header">
-      <h2>FIN3522 Group 16</h2>
-      <div class="menu-top">
+    <!-- Add the left-side menu container -->
+    <div class="menu-container">
+      <div class="menu-item">
         <a href="#">Home</a>
+      </div>
+      <div class="menu-item">
         <a href="#">About</a>
+      </div>
+      <div class="menu-item">
         <a href="#">Contact</a>
       </div>
     </div>
@@ -131,18 +109,6 @@
           <p>(double-click on a legend to isolate its corresponding trace)</p>
           <p>Data source: FRED API (release ID: 52: Z.1 Financial Accounts of the United States) | Created by: Endre Steen</p>
         </div>
-      </div>
-    </div>
-    <!-- Left-side menu content container -->
-    <div class="menu-container">
-      <div class="menu-item">
-        <a href="#">WE</a>
-      </div>
-      <div class="menu-item">
-        <a href="#">LOVE</a>
-      </div>
-      <div class="menu-item">
-        <a href="#">FINANCÉ</a>
       </div>
     </div>
   </body>
