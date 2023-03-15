@@ -11,7 +11,35 @@
         padding: 0;
         display: flex; /* Make the body a flex container */
       }
+      
+      .header {
+        background-color: #444444;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
 
+      .header h2 {
+        margin: 0;
+        color: white;
+      }
+
+      .menu-top {
+        display: flex;
+        justify-content: center;
+      }
+
+      .menu-top a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .menu-top a:hover {
+        background-color: #333333;
+      }
+      
       .container {
         flex: 1; /* Make the container element take up the remaining width */
         display: flex;
@@ -86,6 +114,15 @@
     </style>
   </head>
   <body>
+    <!-- Add the top menu container -->
+    <div class="header">
+      <h2>FIN3522 Group 16</h2>
+      <div class="menu-top">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
     <!-- Add the left-side menu container -->
     <div class="menu-container">
       <div class="menu-item">
