@@ -18,6 +18,7 @@
         color: white;
         margin: 0;
         padding: 0;
+        display: flex;
       }
 
       .header {
@@ -83,39 +84,25 @@
         height: 95%;
         border: none;
       }
-      
-      footer {
-        background-color: #333333;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
 
-      footer ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
+      .textbox-container {
+        background-color: transparent;
+        width: 100%;
+        height: 80px;
         display: flex;
+        align-items: center;
         justify-content: center;
+        height: calc(100%px);
       }
 
-      footer li {
-        margin: 0 10px;
-      }
-
-      footer a {
-        color: white;
-        text-decoration: none;
-      }
-
-      footer a:hover {
-        text-decoration: underline;
-      }
-
-      @media only screen and (max-width: 768px) {
-        footer {
-          display: none;
-        }
+      .textbox {
+        background-color: white;
+        color: #666666;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px #999999;
+        max-width: 90%;
+        text-align: center;
       }
 
       /* Styles for the left-side menu */
@@ -159,24 +146,21 @@
     </div>
     <!-- Main content container -->
     <div class="container">
-      <footer>
-        <ul>
-          <li><a href="Mortgage_US_by_holder.html" target="chart-iframe">Mortgage by holder</a></li>
-          <li><a href="Mortgage_US_by_type.html" target="chart-iframe">Mortgage by type</a></li>
-          <li><a href="contact.html" target="chart-iframe">Contact</a></li>
-        </ul>
-      <p>(double-click on a legend to isolate its corresponding trace)</p>
-      <p>Data source: FRED API (release ID: 52: Z.1 Financial Accounts of the United States) | Created by: Endre Steen</p>
-      <hr>
-        <p>(background-video downloaded from Vecteezy.com)</p>
-    </footer>
+      <h1></h1>
       <div class="chart-container">
         <iframe src="Mortgage_US_by_holder.html" name="chart-iframe"></iframe>
+      </div>
+      <div class="textbox-container">
+        <div class="textbox">
+          <p>(double-click on a legend to isolate its corresponding trace)</p>
+          <p>Data source: FRED API (release ID: 52: Z.1 Financial Accounts of the United States) | Created by: Endre Steen</p>
+          <hr>
+          <p>(background-video downloaded from Vecteezy.com)
+        </div>
       </div>
     </div>
   </body>
 </html>
-
 
 
 
