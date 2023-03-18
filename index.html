@@ -137,46 +137,47 @@
         text-decoration: none;
       }
       
-      .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 2;
-      }
-
-      .dropdown-menu a {
-        display: block;
+      /* Dropdown Button */
+      .dropbtn {
+        background-color: #04AA6D;
         color: white;
-        text-decoration: none;
-        padding: 10px;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
       }
 
-      .dropdown-menu a:hover {
-        background-color: #333333;
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
       }
 
-      .dropdown-menu-content {
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
         display: none;
         position: absolute;
-        z-index: 9999;
-        background-color: #333333;
+        background-color: #f1f1f1;
         min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
       }
 
-      .dropdown-menu-content a {
-        color: white;
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
         text-decoration: none;
         display: block;
-        padding: 10px;
       }
 
-      .dropdown-menu:hover .dropdown-menu-content {
-        display: block;
-      }
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #ddd;}
 
-      .dropdown-menu:hover .menu-top a {
-        background-color: #333333;
-      }
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {display: block;}
+
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
       
     </style>
     <script src="https://kit.fontawesome.com/1886bebc5e.js" crossorigin="anonymous"></script>
