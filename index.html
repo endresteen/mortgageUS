@@ -44,11 +44,8 @@
         padding: 10px;
       }
       
-      .menu-top a {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-      }
+      .top-menu {
+        overflow: visible;
       
       .menu-item {
         display: inline-block;
@@ -136,8 +133,10 @@
       }
       
       .dropdown-menu {
-        position: relative;
-        display: inline-block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
       }
 
       .dropdown-menu a {
